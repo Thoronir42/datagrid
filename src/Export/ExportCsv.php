@@ -42,6 +42,9 @@ class ExportCsv extends Export
 		bool $includeBom
 	): callable
 	{
+		if (!class_exists(CSVResponse::class)) {
+			throw new \RuntimeException("Class CSVResponse does not exist. Install contributte/application");
+		}
 		return function (
 			array $data,
 			DataGrid $grid

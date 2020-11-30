@@ -25,8 +25,7 @@
 		}
 	},
 	"require": {
-		"php": "^7.2",
-		"contributte/application": "^0.4.1",
+		"php": ">=7.2",
 		"nette/application": "^3.0.1",
 		"nette/di": "^3.0.0",
 		"nette/forms": "^3.0.1",
@@ -35,18 +34,21 @@
 	},
 	"require-dev": {
 		"dibi/dibi": "^3.0.0 || ^4.0.0",
-		"doctrine/orm": "~2.6.3",
+		"doctrine/orm": "2.8.x-dev",
 		"gamee/php-code-checker-rules": "^1.0",
 		"mockery/mockery": "~1.2.2",
 		"nette/database": "~3.0.2",
 		"nette/tester": "^2.2",
 		"nextras/orm": "~3.1.0",
-		"ninjify/coding-standard": "^0.9.0",
-		"phpstan/phpstan": "^0.11.12",
-		"phpstan/phpstan-strict-rules": "^0.11.1",
+		"ninjify/coding-standard": "0.11.x-dev",
+		"phpstan/phpstan": "^0.12.58",
+		"phpstan/phpstan-strict-rules": "^0.12.5",
 		"tharos/leanmapper": "~3.4.1",
 		"tracy/tracy": "~2.6.3"
 	},
+    "suggest": {
+      "contributte/application": "Provide support for CSV Response"
+    },
 	"prefer-stable": true,
 	"minimum-stability": "dev",
 	"config": {
